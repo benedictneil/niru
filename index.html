@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movie Website</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Helvetica, sans-serif;
+			background-color: #000;
+			color: #fff;
+		}
+
+		.container {
+			background-image: url('https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6506x3658+432+89/resize/1100/quality/85/format/webp/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F1a%2Fd8%2Fb3e447dc4b1b99fe4a52a5a4ab95%2Ftdw-20105-r.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-blend-mode: multiply;
+			background-color: rgba(0, 0, 0, 0.7);
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.header {
+			padding: 20px 50px;
+		}
+
+		nav ul {
+			text-align: center;
+		}
+
+		nav ul li {
+			list-style: none;
+			display: inline-block;
+			margin: 0 15px;
+		}
+
+		nav ul li a {
+			text-decoration: none;
+			padding: 10px 20px;
+			color: #fff;
+			background-color: rgba(0, 0, 0, 0.7);
+			border-radius: 5px;
+			transition: background-color 0.3s;
+		}
+
+		nav ul li a:hover {
+			background-color: #ff0000;
+		}
+
+		.content {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.caption {
+			font-size: 60px;
+			font-weight: bold;
+			color: #fff;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		}
+
+		.subtitle {
+			font-size: 24px;
+			letter-spacing: 2px;
+			color: #fff;
+			margin: 20px 0;
+		}
+
+		.btn {
+			padding: 15px 30px;
+			background-color: maroon;
+			color: #fff;
+			border: 1px solid #fff;
+			border-radius: 5px;
+			text-transform: uppercase;
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		.btn:hover {
+			background-color: #ff0000;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<nav>
+				<ul>
+					<li><a href="#">Now Showing</a></li>
+					<li><a href="#">Coming Soon</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="content">
+			<div class="wrapper">
+				<p class="caption">Deadpool & Wolverine</p>
+				<p class="subtitle">Now Showing in Cinemas</p>
+				<p class="btn">Book Now</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+</html>
