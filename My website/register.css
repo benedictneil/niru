@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(ORB.png);
+    background-blend-mode: multiply;
+    background-color: gray;
+}
+
+section {
+    position: relative;
+    max-width: 430px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+    background-color: transparent;
+    padding: 0 5px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    padding: 15px 5px 5px; /* Adjust padding for better appearance */
+    color: #fff;
+}
+
+.inputbox input:focus ~ label,
+.inputbox input:not(:placeholder-shown) ~ label {
+    top: -20px;
+    font-size: 0.85rem;
+    color: rgb(202, 192, 181);
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.radio-group div {
+    margin-right: 15px;
+    color: #fff;
+}
+
+input[type="radio"] {
+    accent-color: darkorange;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: darkorange;
+    color: #fff;
+}
+
+.register {
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+
+.back-button {
+    display: inline-flex;
+    width: auto;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color: darkorange;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #fff;
+    color: darkorange;
+    text-decoration: none;
+}
